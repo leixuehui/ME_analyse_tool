@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\CAN">
+      <UniqueIdentifier>{a1f445f5-6665-41a5-8432-4ba9d8300248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CAN">
+      <UniqueIdentifier>{09a90d70-ea6d-46be-a025-6fd6e506e66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Widget">
+      <UniqueIdentifier>{1bdf7438-84a4-4faa-9b60-217d9d4a0ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Widget">
+      <UniqueIdentifier>{d8c0ee01-03e1-414d-8848-79ab67a81224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Video">
+      <UniqueIdentifier>{386bb571-019f-4b08-ae79-db6cc7a4bd7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Video">
+      <UniqueIdentifier>{cddb9846-dafa-42e1-b102-00c67123ca41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Json">
+      <UniqueIdentifier>{354077f6-91ab-4a12-83a3-41d9f9570d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Json">
+      <UniqueIdentifier>{ab80bf79-9df5-4d32-8dbf-a17d6c95dabd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Widget\Widget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CAN\CAN_ME.h">
+      <Filter>Header Files\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="CAN\CAN_Radar.h">
+      <Filter>Header Files\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="CAN\CAN_SOTEREA.h">
+      <Filter>Header Files\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="Video\videoUtils.h">
+      <Filter>Header Files\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\json\json\autolink.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\json\json\config.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\json\json\features.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\json\json\forwards.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\json\json\json.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="global_header.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\json\json_batchallocator.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\json\json\reader.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\json\json\value.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\json\json\writer.h">
+      <Filter>Header Files\Json</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="threadsafe_queue.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="thirdparty\json\json_internalarray.inl">
+      <Filter>Header Files\Json</Filter>
+    </None>
+    <None Include="thirdparty\json\json_internalmap.inl">
+      <Filter>Header Files\Json</Filter>
+    </None>
+    <None Include="thirdparty\json\json_valueiterator.inl">
+      <Filter>Header Files\Json</Filter>
+    </None>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CAN\CAN_ME.cpp">
+      <Filter>Source Files\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="CAN\CAN_Radar.cpp">
+      <Filter>Source Files\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="CAN\CAN_SOTEREA.cpp">
+      <Filter>Source Files\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="CAN\canparser.cpp">
+      <Filter>Source Files\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="Video\videoUtils.cpp">
+      <Filter>Source Files\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget\MyLabel.cpp">
+      <Filter>Source Files\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget\TipsLabel.cpp">
+      <Filter>Source Files\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget\Widget.cpp">
+      <Filter>Source Files\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\json\json_reader.cpp">
+      <Filter>Source Files\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\json\json_value.cpp">
+      <Filter>Source Files\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\json\json_writer.cpp">
+      <Filter>Source Files\Json</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="CAN\canparser.h">
+      <Filter>Header Files\CAN</Filter>
+    </QtMoc>
+    <QtMoc Include="Widget\MyLabel.h">
+      <Filter>Header Files\Widget</Filter>
+    </QtMoc>
+    <QtMoc Include="Widget\TipsLabel.h">
+      <Filter>Header Files\Widget</Filter>
+    </QtMoc>
+    <QtMoc Include="Widget\Widget.h">
+      <Filter>Header Files\Widget</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+</Project>

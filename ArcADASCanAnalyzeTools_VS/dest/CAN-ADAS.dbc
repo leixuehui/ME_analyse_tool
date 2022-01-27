@@ -1,0 +1,781 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ARC_ADAS
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ Fault_Code : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1953 Device_Information: 8 Vector__XXX
+ SG_ version_patch : 58|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ version_minor : 53|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ version_main : 48|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ sightline_shelter : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ calib_status : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ calib_percentage : 40|4@1+ (10,0) [0|10] "" Vector__XXX
+ SG_ time_interval : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 1952 Speed_limit_sign: 8 Vector__XXX
+ SG_ speed_limit_sign_mark : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ speed_limit_value : 0|6@1+ (5,0) [0|315] "km/h" Vector__XXX
+
+BO_ 1940 Right_Lane_B: 8 Vector__XXX
+ SG_ View_range_valid : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ View_Range : 40|15@1+ (0.00390625,0) [0|127.99609375] "m" Vector__XXX
+ SG_ C2 : 8|16@1- (3.81E-006,-0.12) [-0.12|0.12] "1/m" Vector__XXX
+
+BO_ 1939 Right_Lane_A: 8 Vector__XXX
+ SG_ C1 : 48|16@1- (0.0005,-1) [-1|1] "radians" Vector__XXX
+ SG_ C0 : 32|16@1- (0.02,-40) [-40|40] "m" Vector__XXX
+ SG_ Width_marking : 16|16@1+ (0.01,0) [0|5] "m" Vector__XXX
+ SG_ Lane_type : 2|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Quality : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1938 Left_Lane_B: 8 Vector__XXX
+ SG_ View_range_valid : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ View_Range : 40|15@1+ (0.00390625,0) [0|127.99609375] "m" Vector__XXX
+ SG_ C2 : 8|16@1- (3.81E-006,-0.12) [-0.12|0.12] "1/m" Vector__XXX
+
+BO_ 1937 Left_Lane_A: 8 Vector__XXX
+ SG_ C1 : 48|16@1- (0.0005,-1) [-1|1] "radians" Vector__XXX
+ SG_ C0 : 32|16@1- (0.02,-40) [-40|40] "m" Vector__XXX
+ SG_ Width_marking : 16|16@1+ (0.01,0) [0|5] "m" Vector__XXX
+ SG_ Lane_type : 2|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Quality : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1999 Object_extra_information_F: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1998 Object_extra_information_E: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1997 Object_extra_information_D: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1996 Object_extra_information_C: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1995 Object_extra_information_B: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1994 Object_extra_information_A: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1993 Object_extra_information_9: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1992 Object_extra_information_8: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1991 Object_extra_information_7: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1990 Object_extra_information_6: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1989 Object_extra_information_5: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1988 Object_extra_information_4: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1987 Object_extra_information_3: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1986 Object_extra_information_2: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1985 Object_extra_information_1: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1984 Object_extra_information_0: 8 Vector__XXX
+ SG_ image_lane : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_direction : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_lane : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_dyn_prop : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ obj_exist_prop : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_det_prop : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ obj_y_arel : 16|12@1- (0.02,-40.96) [-40.96|40.94] "米每二次方秒" Vector__XXX
+ SG_ obj_width : 8|8@1+ (0.025,0) [0|6.375] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1983 Object_basic_information_F: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1982 Object_basic_information_E: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1981 Object_basic_information_D: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1980 Object_basic_information_C: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1979 Object_basic_information_B: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1978 Object_basic_information_A: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1977 Object_basic_information_9: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1976 Object_basic_information_8: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1975 Object_basic_information_7: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1974 Object_basic_information_6: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1973 Object_basic_information_5: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1972 Object_basic_information_4: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1971 Object_basic_information_3: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1970 Object_basic_information_2: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1969 Object_basic_information_1: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1968 Object_basic_information_0: 8 Vector__XXX
+ SG_ obj_y_vrel : 48|14@1- (0.025,-204.8) [-128|128] "m/s" Vector__XXX
+ SG_ obj_x_vrel : 38|10@1- (0.1,-51.2) [-51.2|51.1] "m/s" Vector__XXX
+ SG_ obj_class : 33|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ obj_y : 20|13@1+ (0.1,0) [0|819.1] "m" Vector__XXX
+ SG_ obj_x : 8|12@1- (0.1,-204.8) [-204.8|204.7] "m" Vector__XXX
+ SG_ obj_id : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 1936 Object_status_information: 8 Vector__XXX
+ SG_ rightlane_status : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ leftlane_status : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ sv_rightlane : 20|12@1- (0.02,-40.96) [-40.96|40.94] "m" Vector__XXX
+ SG_ sv_leftlane : 8|12@1- (0.02,-40.96) [-40.96|40.94] "m" Vector__XXX
+ SG_ obj_nums : 4|4@1+ (1,0) [0|10] "" Vector__XXX
+ SG_ drive_status : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ device_status : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ meas_counter : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1920 Display_and_warning: 8 Vector__XXX
+ SG_ Fault_Code_7 : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fault_Code_6 : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fault_Code_5 : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fault_Code_4 : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fault_Code_3 : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fault_Code_2 : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fault_Code_1 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fault_Code_0 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TTC : 41|7@1+ (0.1,0) [0|12.5] "" Vector__XXX
+ SG_ TTC_Valid : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Vehicle_Distance_Monitoring : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FCW_Level : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Vehicle_Detection_Switch : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PCW : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Right_LDW_On : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Left_LDW_On : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LDW : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 Fault_Code "故障码";
+CM_ BO_ 1953 "设备信息";
+CM_ SG_ 1953 version_patch "协议输出补丁版本号";
+CM_ SG_ 1953 version_minor "协议输出次版本号";
+CM_ SG_ 1953 version_main "协议输出主版本号";
+CM_ SG_ 1953 sightline_shelter "视线遮挡";
+CM_ SG_ 1953 calib_status "标定状态";
+CM_ SG_ 1953 calib_percentage "标定百分比";
+CM_ SG_ 1953 time_interval "时间段";
+CM_ BO_ 1952 "交通信号识别-限速牌";
+CM_ BO_ 1940 "右车道线信息";
+CM_ BO_ 1939 "右车道线信息";
+CM_ BO_ 1938 "左车道线信息";
+CM_ BO_ 1937 "左车道线信息";
+CM_ BO_ 1999 "障碍物额外信息";
+CM_ SG_ 1999 image_lane "图像坐标系";
+CM_ SG_ 1999 obj_lane "世界坐标系";
+CM_ BO_ 1998 "障碍物额外信息";
+CM_ SG_ 1998 image_lane "图像坐标系";
+CM_ SG_ 1998 obj_lane "世界坐标系";
+CM_ BO_ 1997 "障碍物额外信息";
+CM_ SG_ 1997 image_lane "图像坐标系";
+CM_ SG_ 1997 obj_lane "世界坐标系";
+CM_ BO_ 1996 "障碍物额外信息";
+CM_ SG_ 1996 image_lane "图像坐标系";
+CM_ SG_ 1996 obj_lane "世界坐标系";
+CM_ BO_ 1995 "障碍物额外信息";
+CM_ SG_ 1995 image_lane "图像坐标系";
+CM_ SG_ 1995 obj_lane "世界坐标系";
+CM_ BO_ 1994 "障碍物额外信息";
+CM_ SG_ 1994 image_lane "图像坐标系";
+CM_ SG_ 1994 obj_lane "世界坐标系";
+CM_ BO_ 1993 "障碍物额外信息";
+CM_ SG_ 1993 image_lane "图像坐标系";
+CM_ SG_ 1993 obj_lane "世界坐标系";
+CM_ BO_ 1992 "障碍物额外信息";
+CM_ SG_ 1992 image_lane "图像坐标系";
+CM_ SG_ 1992 obj_lane "世界坐标系";
+CM_ BO_ 1991 "障碍物额外信息";
+CM_ SG_ 1991 image_lane "图像坐标系";
+CM_ SG_ 1991 obj_lane "世界坐标系";
+CM_ BO_ 1990 "障碍物额外信息";
+CM_ SG_ 1990 image_lane "图像坐标系";
+CM_ SG_ 1990 obj_lane "世界坐标系";
+CM_ BO_ 1989 "障碍物额外信息";
+CM_ SG_ 1989 image_lane "图像坐标系";
+CM_ SG_ 1989 obj_lane "世界坐标系";
+CM_ BO_ 1988 "障碍物额外信息";
+CM_ SG_ 1988 image_lane "图像坐标系";
+CM_ SG_ 1988 obj_lane "世界坐标系";
+CM_ BO_ 1987 "障碍物额外信息";
+CM_ SG_ 1987 image_lane "图像坐标系";
+CM_ SG_ 1987 obj_lane "世界坐标系";
+CM_ BO_ 1986 "障碍物额外信息";
+CM_ SG_ 1986 image_lane "图像坐标系";
+CM_ SG_ 1986 obj_lane "世界坐标系";
+CM_ BO_ 1985 "障碍物额外信息";
+CM_ SG_ 1985 image_lane "图像坐标系";
+CM_ SG_ 1985 obj_lane "世界坐标系";
+CM_ BO_ 1984 "障碍物额外信息";
+CM_ SG_ 1984 image_lane "图像坐标系";
+CM_ SG_ 1984 obj_lane "世界坐标系";
+CM_ BO_ 1983 "障碍物基本信息";
+CM_ SG_ 1983 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1982 "障碍物基本信息";
+CM_ SG_ 1982 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1981 "障碍物基本信息";
+CM_ SG_ 1981 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1980 "障碍物基本信息";
+CM_ SG_ 1980 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1979 "障碍物基本信息";
+CM_ SG_ 1979 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1978 "障碍物基本信息";
+CM_ SG_ 1978 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1977 "障碍物基本信息";
+CM_ SG_ 1977 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1976 "障碍物基本信息";
+CM_ SG_ 1976 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1975 "障碍物基本信息";
+CM_ SG_ 1975 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1974 "障碍物基本信息";
+CM_ SG_ 1974 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1973 "障碍物基本信息";
+CM_ SG_ 1973 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1972 "障碍物基本信息";
+CM_ SG_ 1972 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1971 "障碍物基本信息";
+CM_ SG_ 1971 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1970 "障碍物基本信息";
+CM_ SG_ 1970 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1969 "障碍物基本信息";
+CM_ SG_ 1969 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1968 "障碍物基本信息";
+CM_ SG_ 1968 obj_class "0:car
+1:truck
+2:ped
+3:bus
+4:bicycle
+5-31:reserved";
+CM_ BO_ 1936 "障碍物状态";
+CM_ SG_ 1936 rightlane_status "右车道线状态:
+0:无车道线
+1:检到车道线";
+CM_ SG_ 1936 leftlane_status "左车道线状态:
+0:无车道线
+1:检到车道线";
+CM_ SG_ 1936 sv_rightlane "m( 自 车 至 右 车 道 线 距离 ) ，未检到车道线时该值无效";
+CM_ SG_ 1936 sv_leftlane "m( 自车至左车道线距离 )，未检到车道线时该值无效";
+CM_ SG_ 1936 obj_nums "目标个数";
+CM_ SG_ 1936 drive_status "驾驶状态:左右转向灯
+0: 未变道
+1: 左变道
+2: 右变道";
+CM_ SG_ 1936 device_status "0: normal
+1-3:预留";
+CM_ SG_ 1936 meas_counter "测量周期计数器";
+CM_ BO_ 1920 "显示与预警";
+CM_ SG_ 1920 Fault_Code_7 "FCW 检测功能故障 fcwLevel = 0";
+CM_ SG_ 1920 Fault_Code_6 "PCW 检测功能故障";
+CM_ SG_ 1920 Fault_Code_5 "LDW 检测能故障";
+CM_ SG_ 1920 Fault_Code_4 "can-雷达通信失败";
+CM_ SG_ 1920 Fault_Code_3 "can-车通信失败";
+CM_ SG_ 1920 Fault_Code_2 "摄像头遮挡";
+CM_ SG_ 1920 Fault_Code_1 "摄像头无图片";
+CM_ SG_ 1920 Fault_Code_0 "摄像头标定失败";
+CM_ SG_ 1920 TTC "含义：本车与障碍物的距离 / 相对车速
+单位：0.1s
+范围：0～12.5";
+CM_ SG_ 1920 TTC_Valid "表示 TTC 是否有效，0=无效，1=有效";
+CM_ SG_ 1920 Vehicle_Distance_Monitoring "设定的车距监测预警阈值为 HW Config，实际的车距测量值为 HW
+0：未检测到前车
+1：检测到前车，且 HW > HW Config，无预警
+2：检测到前车，且 HW ≤ HW Config，产生预警";
+CM_ SG_ 1920 FCW_Level "前车碰撞预警级别：
+0：无预警
+1：预碰撞预警
+2：碰撞预警";
+CM_ SG_ 1920 Vehicle_Detection_Switch "车辆监测是否开启，0=关闭，1=开启。关闭时，车距监测预警、FCW 全部关闭";
+CM_ SG_ 1920 PCW "行人碰撞预警，0=无预警，1=行人一级碰撞预警，2=行人二级碰撞预警，3=行人紧急制动";
+CM_ SG_ 1920 Right_LDW_On "是否有车道偏离预警，0=无，1=有预警。";
+CM_ SG_ 1920 Left_LDW_On "是否有车道偏离预警";
+CM_ SG_ 1920 LDW "LDW开关";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 50 500;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenMsgCycleTime" 50;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 1952 500;
+BA_ "GenMsgCycleTime" BO_ 1920 100;
+VAL_ 3221225472 Fault_Code 0 "正常" 128 "FCW 检测功能故障 fcwLevel = 0" 64 "PCW 检测功能故障" 32 "LDW 检测能故障" 16 "can-雷达通信失败" 8 "can-车通信失败" 4 "摄像头遮挡" 2 "摄像头无图片" 1 "摄像头标定失败" ;
+VAL_ 1953 sightline_shelter 3 "reserved" 2 "reserved" 1 "shelter" 0 "unshelter" ;
+VAL_ 1953 calib_status 3 "标定失败" 2 "标定中" 1 "标定成功" 0 "未标定" ;
+VAL_ 1953 time_interval 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "night" 1 "daytime" 0 "unknown" ;
+VAL_ 1952 speed_limit_sign_mark 2 "识别到解除限速牌" 1 "识别到限速牌" 0 "未识别到限速牌" ;
+VAL_ 1940 View_range_valid 1 "valid" 0 "not valid" ;
+VAL_ 1939 Lane_type 1 "solid" 0 "dashed" ;
+VAL_ 1939 Quality 3 "high quality" 2 "high quality" 1 "low quality" 0 "low quality" ;
+VAL_ 1938 View_range_valid 1 "valid" 0 "not valid" ;
+VAL_ 1937 Lane_type 1 "solid" 0 "dashed" ;
+VAL_ 1937 Quality 3 "high quality" 2 "high quality" 1 "low quality" 0 "low quality" ;
+VAL_ 1999 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1999 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1999 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1999 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1999 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1999 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1998 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1998 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1998 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1998 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1998 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1998 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1997 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1997 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1997 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1997 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1997 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1997 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1996 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1996 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1996 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1996 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1996 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1996 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1995 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1995 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1995 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1995 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1995 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1995 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1994 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1994 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1994 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1994 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1994 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1994 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1993 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1993 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1993 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1993 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1993 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1993 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1992 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1992 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1992 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1992 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1992 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1992 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1991 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1991 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1991 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1991 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1991 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1991 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1990 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1990 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1990 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1990 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1990 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1990 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1989 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1989 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1989 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1989 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1989 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1989 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1988 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1988 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1988 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1988 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1988 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1988 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1987 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1987 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1987 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1987 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1987 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1987 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1986 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1986 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1986 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1986 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1986 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1986 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1985 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1985 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1985 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1985 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1985 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1985 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1984 image_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1984 obj_direction 3 "reserve" 2 "crosswise direction" 1 "reverse direction" 0 "same direction" ;
+VAL_ 1984 obj_lane 3 "right lane" 2 "left lane" 1 "same lane" 0 "undefined" ;
+VAL_ 1984 obj_dyn_prop 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "reserved" 1 "reserved" 0 "unclassified" ;
+VAL_ 1984 obj_exist_prop 3 "99%" 2 "75%" 1 "50%" 0 "25%" ;
+VAL_ 1984 obj_det_prop 3 "fused" 2 "sole-camera" 1 "sole-radar" 0 "undefined" ;
+VAL_ 1983 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1982 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1981 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1980 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1979 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1978 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1977 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1976 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1975 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1974 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1973 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1972 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1971 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1970 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1969 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1968 obj_class 31 "reserved" 30 "reserved" 29 "reserved" 28 "reserved" 27 "reserved" 26 "reserved" 25 "reserved" 24 "reserved" 23 "reserved" 22 "reserved" 21 "reserved" 20 "reserved" 19 "reserved" 18 "reserved" 17 "reserved" 16 "reserved" 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "reserved" 6 "reserved" 5 "reserved" 4 "bicycle" 3 "bus" 2 "ped" 1 "truck" 0 "car" ;
+VAL_ 1936 rightlane_status 1 "检测到车道线" 0 "无车道线" ;
+VAL_ 1936 leftlane_status 1 "检测到车道线" 0 "无车道线" ;
+VAL_ 1936 drive_status 2 "右变道" 1 "左变道" 0 "未变道" ;
+VAL_ 1936 device_status 0 "正常" ;
+VAL_ 1920 Fault_Code_7 1 "FCW 检测功能故障" 0 "FCW 检测功能正常" ;
+VAL_ 1920 Fault_Code_6 1 "PCW 检测功能故障 " 0 "PCW 检测功能正常" ;
+VAL_ 1920 Fault_Code_5 1 "LDW 检测能故障" 0 "LDW 检测能正常" ;
+VAL_ 1920 Fault_Code_4 1 "can-雷达通信失败" 0 "can-雷达通信正常" ;
+VAL_ 1920 Fault_Code_3 1 "can-车通信失败" 0 "can-车通信成功" ;
+VAL_ 1920 Fault_Code_2 1 "摄像头遮挡" 0 "摄像头未遮挡" ;
+VAL_ 1920 Fault_Code_1 1 "摄像头无图片" 0 "摄像头有图片" ;
+VAL_ 1920 Fault_Code_0 1 "摄像头标定失败" 0 "摄像头标定正常" ;
+VAL_ 1920 TTC_Valid 1 "有效" 0 "无效" ;
+VAL_ 1920 Vehicle_Distance_Monitoring 2 "检测到前车，产生预警" 1 "检测到前车，无预警" 0 "未检测到前车" ;
+VAL_ 1920 FCW_Level 2 "碰撞预警" 1 "预碰撞预警" 0 "无预警" ;
+VAL_ 1920 Vehicle_Detection_Switch 1 "开启" 0 "关闭" ;
+VAL_ 1920 PCW 3 "行人紧急制动" 2 "行人二级碰撞预警" 1 "行人一级碰撞预警" 0 "无预警" ;
+VAL_ 1920 Right_LDW_On 1 "有预警" 0 "无预警" ;
+VAL_ 1920 Left_LDW_On 1 "有预警" 0 "无预警" ;
+VAL_ 1920 LDW 1 "开启" 0 "关闭" ;
+

@@ -1,0 +1,104 @@
+[33mcommit ebacb83d443e1dc03065fad742bd47011562ef10[m[33m ([m[1;36mHEAD -> [m[1;32mvision-1.5[m[33m, [m[1;32mversion-1.5[m[33m)[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Tue Jan 25 17:13:56 2022 +0800
+
+    delete big data
+
+[33mcommit 8582132dd95902e90578509487a7b15e0b0bc02d[m[33m ([m[1;32m显示上一次版本[m[33m)[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Tue Dec 21 20:41:29 2021 +0800
+
+    temp12212041
+
+[33mcommit 6d7912010cbbe257850c0b3d16493b138efb0be1[m[33m ([m[1;32m快速闪烁版本[m[33m)[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Mon Dec 20 12:08:52 2021 +0800
+
+    test
+
+[33mcommit bc81f2a1438c23718d27bc87295a32500341ca04[m[33m ([m[1;32moutput_data_on_QT[m[33m)[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Mon Dec 20 11:54:03 2021 +0800
+
+    1220updat
+
+[33mcommit e07c21f5aee7aa95a2dc247df0e21c953cc744b9[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Fri Dec 17 10:39:38 2021 +0800
+
+    temp_vsion
+
+[33mcommit bd1778cc89c43f45d7374256f80261209973ef1a[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Mon Dec 13 21:23:15 2021 +0800
+
+    fix some
+
+[33mcommit a61503a36fe0ff86d866d8d10fa4bc6fccfe0038[m
+Merge: 5401969 b146615
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Mon Dec 13 17:38:26 2021 +0800
+
+    Merge branch 'output_data_on_QT' of https://gitee.com/leixuehui/arc-adascan-analyze-tools_-vs into output_data_on_QT
+
+[33mcommit 5401969d70b691bdb2d4e732f8a9a7cc1d32dec9[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Mon Dec 13 17:35:52 2021 +0800
+
+    finish_part1
+
+[33mcommit b146615658fd297cf9322c5350ecaff4a9a16b8f[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Mon Dec 13 17:24:18 2021 +0800
+
+    Revert "updata11"
+    
+    This reverts commit 037e1493fde13bd3983cb4e63953da49898d5b53.
+
+[33mcommit 037e1493fde13bd3983cb4e63953da49898d5b53[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Mon Dec 13 16:48:01 2021 +0800
+
+    updata11
+
+[33mcommit 74fa6f012804e4b77025710c44d32268669ec0b5[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Mon Dec 13 16:10:20 2021 +0800
+
+    updata1
+
+[33mcommit 01dd5ce91c36c64abfa109f2e1b96ded092059be[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Sat Dec 11 18:25:32 2021 +0800
+
+    finish frame and data
+
+[33mcommit 70799a0f8f9ba2d3d354ce19b79eb3a310d6ed5d[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Sat Dec 11 13:57:22 2021 +0800
+
+    updata
+
+[33mcommit f81910b222396e66316847f5caa40693f928004b[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Sat Dec 11 11:41:09 2021 +0800
+
+    finish_read_Json
+
+[33mcommit c5cb5557a2fa2c98b1e6ef960b5e55a7ab8aa17d[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Thu Dec 9 19:30:17 2021 +0800
+
+    finish_display_data
+
+[33mcommit 62fb1a5238e1fa3bd588171cae6413834b69de00[m[33m ([m[1;32mmaster[m[33m)[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Wed Dec 8 10:16:55 2021 +0800
+
+    添加项目文件。
+
+[33mcommit cbcdfad4dbd5c02edef6d91d2405f068a95f5333[m
+Author: 雪辉 雷 <1183858533@qq.com>
+Date:   Wed Dec 8 10:16:39 2021 +0800
+
+    添加 .gitignore 和 .gitattributes。
